@@ -15,7 +15,7 @@ public class Main {
         Slizerin grehem;
         Slizerin gregory;
         try {
-            harry = new Griffindor("Гарри Поттер", 1, 2, 3, 4, 5);
+            harry  = new Griffindor("Гарри Поттер", 1, 2, 3, 4, 5);
             hermiona = new Griffindor("Гермиона Грейнджер", 5, 4, 3, 2, 1);
             ron = new Griffindor("Рон Уизли", 9, 10, 11, 12, 13);
             cjou = new Kogtevran("Чжоу Чанг", 7, 8, 2, 3, 1, 5);
