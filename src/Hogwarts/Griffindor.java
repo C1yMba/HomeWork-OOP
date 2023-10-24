@@ -42,7 +42,7 @@ public class Griffindor extends Hogwarts {
         if(qualitySumOne > qualitySumTwo){
             System.out.println(studentOne.getStudentName() + ", лучший Грифиндорец, чем " + studentTwo.getStudentName());
         } else if(qualitySumOne == qualitySumTwo) {
-            System.out.println("Ученики равны по силе");
+            System.out.println("Ученики равны по силе!");
         }else {
             System.out.println(studentTwo.getStudentName() + ", лучший Грифиндорец, чем " + studentOne.getStudentName());
         }

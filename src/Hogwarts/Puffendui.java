@@ -33,7 +33,7 @@ public class Puffendui extends Hogwarts {
         if(qualitySumOne > qualitySumTwo) {
             System.out.println(studentOne.getStudentName() + ", лучший Пуффендуец, чем " + studentTwo.getStudentName());
         }else if(qualitySumOne == qualitySumTwo) {
-                System.out.println("Ученики равны по силе");
+                System.out.println("Ученики равны по силе!");
             }
         else {
             System.out.println(studentTwo.getStudentName() + ", лучший Пуффендуец, чем " + studentOne.getStudentName());
