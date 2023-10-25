@@ -45,7 +45,7 @@ public class Hogwarts {
         if(studentOne.powerMagic > studentTwo.powerMagic){
             System.out.println(studentOne.getStudentName() + ", обладает большим уровнем магии, чем " + studentTwo.getStudentName());
         } else if(studentOne.powerMagic == studentTwo.powerMagic) {
-            System.out.println("Студенты обладают одинаковым уровнем магии");
+            System.out.println("Студенты обладают одинаковым уровнем магии!");
         }else {
             System.out.println(studentTwo.getStudentName() + ", обладает большим уровнем магии, чем " + studentOne.getStudentName());
         }

@@ -41,7 +41,7 @@ public class Kogtevran extends Hogwarts {
         if(qualitySumOne > qualitySumTwo){
             System.out.println(studentOne.getStudentName() + ", лучший Когтевранец, чем " + studentTwo.getStudentName());
         }else if(qualitySumOne == qualitySumTwo) {
-            System.out.println("Ученики равны по силе");
+            System.out.println("Ученики равны по силе!");
         }
         else {
             System.out.println(studentTwo.getStudentName() + ", лучший Когтевранец, чем " + studentOne.getStudentName());
