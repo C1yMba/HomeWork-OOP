@@ -31,18 +31,18 @@ public abstract class HogwartsStudents {
         }
     }
     public String toString(){
-        return "\nКачества студента: \nИмя студента: " + studentName + "\nУровень трансгрессии: " + transgression +
-                "\nМощность колдовства: " + powerMagic;
+        return "\nКачества студента: \nИмя студента: " + getStudentName() + "\nУровень трансгрессии: " + getTransgression() +
+                "\nМощность колдовства: " + getPowerMagic();
     }
     public String bestStudent(HogwartsStudents studentTwo) {
-        int qualitySumOne = this.transgression + this.powerMagic;
-        int qualitySumTwo = studentTwo.transgression + studentTwo.powerMagic;
+        int qualitySumOne = this.getTransgression() + this.getPowerMagic();
+        int qualitySumTwo = studentTwo.getTransgression() + studentTwo.getPowerMagic();
         if(qualitySumOne > qualitySumTwo){
-            return this.studentName + ", лучше ученик, чем " + studentTwo.studentName;
+            return this.getStudentName() + ", лучше ученик, чем " + studentTwo.getStudentName();
         } else if(qualitySumOne == qualitySumTwo) {
             return "Ученики равны по силе!";
         }else {
-            return studentTwo.studentName + ", лучше ученик, чем " + this.studentName;
+            return studentTwo.getStudentName() + ", лучше ученик, чем " + this.getStudentName();
         }
     }
 }

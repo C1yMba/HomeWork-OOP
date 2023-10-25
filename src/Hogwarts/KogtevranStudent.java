@@ -31,11 +31,11 @@ public class KogtevranStudent extends HogwartsStudents {
     }
     @Override
     public String toString(){
-        return super.toString() + "\nКачества Когтевранца: \nУм: " + smart + "\nМудрость: " + wise +
-                "\nОстроумность: " + witty + "\nКреативность: " + creative;
+        return super.toString() + "\nКачества Когтевранца: \nУм: " + this.getSmart() + "\nМудрость: " + this.getWise() +
+                "\nОстроумность: " + this.getWitty() + "\nКреативность: " + this.getCreative();
     }
     public String bestKogtevran(KogtevranStudent studentTwo) {
-        int qualitySumOne = this.smart + this.wise + this.creative + this.witty;
+        int qualitySumOne = this.getSmart() + this.getWise() + this.getCreative() + this.getWitty();
         int qualitySumTwo = studentTwo.getSmart() + studentTwo.getWise() + studentTwo.getWitty() + studentTwo.getCreative();
         if(qualitySumOne > qualitySumTwo){
             return this.getStudentName() + ", лучший Когтевранец, чем " + studentTwo.getStudentName();

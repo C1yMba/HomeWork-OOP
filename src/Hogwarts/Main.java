@@ -17,12 +17,12 @@ public class Main {
         try {
             harry  = new GriffindorStudent("Гарри Поттер", 1, 2, 3, 4, 5);
             hermiona = new GriffindorStudent("Гермиона Грейнджер", 5, 4, 3, 2, 1);
-            ron = new GriffindorStudent("Рон Уизли", 9, 10, 11, 12, 13);
-            cjou = new KogtevranStudent("Чжоу Чанг", 7, 8, 2, 3, 1, 5);
-            padma = new KogtevranStudent("Падма Патил", 5, 4, 3, 2, 1, 7);
-            marcus = new KogtevranStudent("Маркус Белби", 4, 8, 9, 2, 3, 7);
-            zaharia = new PuffenduiStudent("Захария Смит", 71, 56, 47, 12, 30);
-            sedrik = new PuffenduiStudent("Седрик Диггори", 12, 14, 87, 92, 20);
+            ron = new GriffindorStudent("Рон Уизли", 10, 10, 11, 12, 13);
+            cjou = new KogtevranStudent("Чжоу Чанг", 5, 8, 2, 3, 1, 5);
+            padma = new KogtevranStudent("Падма Патил", 56, 4, 3, 2, 1, 7);
+            marcus = new KogtevranStudent("Маркус Белби", 78, 8, 9, 2, 3, 7);
+            zaharia = new PuffenduiStudent("Захария Смит", 75, 56, 47, 12, 30);
+            sedrik = new PuffenduiStudent("Седрик Диггори", 19, 14, 87, 92, 20);
             jastin = new PuffenduiStudent("Джастин Финч-Флетчли", 11, 10, 25, 46, 98);
             drako = new SlizerinStudent("Драко Малфой", 11, 22, 33, 44, 55, 66, 77);
             grehem = new SlizerinStudent("Грэхэм Монтегю", 54, 33, 78, 55, 21, 20, 19);

@@ -27,13 +27,13 @@ public class GriffindorStudent extends HogwartsStudents {
 
     @Override
     public String toString() {
-        return super.toString() + "\nКачества Гриффиндорца: \nБлагородство: " + nobility + "\nЧесть: " + honor +
-                "\nХрабрость: " + courage;
+        return super.toString() + "\nКачества Гриффиндорца: \nБлагородство: " + this.getNobility() + "\nЧесть: " + this.getHonor() +
+                "\nХрабрость: " + this.getCourage();
     }
 
     public String bestGriffindor(GriffindorStudent studentTwo) {
-        int qualitySumOne = this.getHonor() + this.nobility + this.courage;
-        int qualitySumTwo = studentTwo.honor + studentTwo.nobility + studentTwo.courage;
+        int qualitySumOne = this.getHonor() + this.getNobility() + this.getCourage();
+        int qualitySumTwo = studentTwo.getHonor() + studentTwo.getNobility() + studentTwo.getCourage();
         if(qualitySumOne > qualitySumTwo){
             return this.getStudentName() + ", лучший Грифиндорец, чем " + studentTwo.getStudentName();
         } else if(qualitySumOne == qualitySumTwo) {

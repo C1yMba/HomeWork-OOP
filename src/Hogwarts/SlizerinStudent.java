@@ -36,12 +36,12 @@ public class SlizerinStudent extends HogwartsStudents {
     }
     @Override
     public String toString(){
-        return super.toString() + "\nКачества Слизеринца: \nХитрость: " + cunning + "\nРешительность: " + determination +
-        "\nАмбициозность: " + ambition + "\nНаходчивость: " + resourceFulness + "\nЖажда власти: " + firstForPower;
+        return super.toString() + "\nКачества Слизеринца: \nХитрость: " + getCunning() + "\nРешительность: " + getDetermination() +
+        "\nАмбициозность: " + getAmbition() + "\nНаходчивость: " + getResourceFulness() + "\nЖажда власти: " + getFirstForPower();
     }
     public String bestSlizerin(SlizerinStudent studentTwo) {
-        int qualitySumOne = this.determination + this.cunning + this.ambition + this.resourceFulness + this.firstForPower;
-        int qualitySumTwo = studentTwo.determination + studentTwo.cunning + studentTwo.ambition + studentTwo.resourceFulness + studentTwo.firstForPower;
+        int qualitySumOne = this.getDetermination() + this.getCunning() + this.getAmbition() + this.getResourceFulness() + this.getFirstForPower();
+        int qualitySumTwo = studentTwo.getDetermination() + studentTwo.getCunning() + studentTwo.getAmbition() + studentTwo.getResourceFulness() + studentTwo.getFirstForPower();
         if(qualitySumOne > qualitySumTwo){
             return this.getStudentName() + ", лучший Слизеринец, чем " + studentTwo.getStudentName();
         }else if(qualitySumOne == qualitySumTwo) {

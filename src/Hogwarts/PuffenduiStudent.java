@@ -24,12 +24,12 @@ public class PuffenduiStudent extends HogwartsStudents {
     @Override
     public String toString(){
 
-        return super.toString() + "\nКачества Пуффендуйца: \nТрудолюбие: " + hardWorking + "\nВерность: " + loyal +
-                "\nЧестность: " + honest;
+        return super.toString() + "\nКачества Пуффендуйца: \nТрудолюбие: " + this.getHardWorking() + "\nВерность: " + this.getLoyal() +
+                "\nЧестность: " + this.getHonest();
     }
     public String bestPuffendui(PuffenduiStudent studentTwo) {
-        int qualitySumOne = this.hardWorking + this.honest + this.loyal;
-        int qualitySumTwo = studentTwo.hardWorking + studentTwo.honest + studentTwo.loyal;
+        int qualitySumOne = this.getHardWorking() + this.getHonest() + this.getLoyal();
+        int qualitySumTwo = studentTwo.getHardWorking() + studentTwo.getHonest() + studentTwo.getLoyal();
         if(qualitySumOne > qualitySumTwo) {
             return this.getStudentName() + ", лучший Пуффендуец, чем " + studentTwo.getStudentName();
         }else if(qualitySumOne == qualitySumTwo){
